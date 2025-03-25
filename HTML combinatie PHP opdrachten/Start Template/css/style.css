@@ -6,6 +6,8 @@ body {
 .wrapper {
   height: 100vh;
   gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
     "profile . . info-list"
@@ -18,6 +20,8 @@ body {
   grid-area: header;
   color: white;
   background-color: #11152e;
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
@@ -35,55 +39,57 @@ ul:hover {
   justify-content: left;
 }
 
-
 .profile > img {
   border: 5px solid rgb(83, 86, 121);
 }
 
-.showcase > h1{
-color:#2767d3
+.showcase > h1 {
+  color: #2767d3;
 }
 
-
-.showcase > p{
-    grid-area: showcase;
-    display: flex;
-    justify-content: flex-end;
-    }
-
-.recent-activity{ 
-    grid-area: recent-activity;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.showcase > p {
+  grid-area: showcase;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.recent-activity > h1{ 
-display: flex;
-justify-content: left;
-color: white;
+.recent-activity {
+  grid-area: recent-activity;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.recent-activity > p{ 
-color: #2767d3;
+.recent-activity > h1 {
+  display: flex;
+  justify-content: left;
+  color: white;
 }
 
-.cs2{ 
-    background-color: #1a202b;
-
+.recent-activity > p {
+  color: #2767d3;
 }
 
-.cyber-punk{ 
-    background-color: #1a202b;
-    
+.cs2 {
+  background-color: #1a202b;
 }
 
-.elden-ring{ 
-    background-color: #1a202b;
-    
+.cyber-punk {
+  background-color: #1a202b;
 }
 
-.edit{ 
-    color: white;
-    
-} 
+.elden-ring {
+  background-color: #1a202b;
+}
+
+.edit-button {
+  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: #344057;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+}
